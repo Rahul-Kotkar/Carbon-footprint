@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Carbon Footprint Calculator</h1>
+    <br>
+    <form id="carbon-calculator" class="carr">
+        <label for="name">Hey user! Enter your name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+       
+        <label for="diet">Diet:</label>
+        <select id="diet" name="diet">
+            <option value="720">Meat-based diet</option>
+            <option value="600">Vegetarian diet</option>
+            <option value="663">Vegan diet</option>
+        </select>
+        <br>
+        <label for="home-energy">Home Energy:</label>
+        <select id="home-energy" name="home-energy">
+            <option value="1369">Electricity and gas (average usage)</option>
+            <option value="684">Electricity only (low usage)</option>
+            <option value="2050">Gas only (high usage)</option>
+        </select>
+        <br>
+        <label for="age">Age:</label>
+        <select id="age" name="age">
+            <option value="0">Select your age group</option>
+            <option value="950">01 to 10 years</option>
+            <option value="1200">11 to 20 years</option>
+            <option value="1800">21 to 60 years</option>
+            <option value="1500">More than 61 years</option>
+        </select>
+        <br>
+        <label for="occupation">Occupation:</label>
+        <select id="occupation" name="occupation">
+            <option value="0">Choose your occupation</option>
+            <option value="200">A sport person</option>
+            <option value="200">A corporate Employee</option>
+            <option value="100">Farmer</option>
+            <option value="0">Other</option>
+        </select>
+        <br>
+        <br>
+        <label for="diesel-car">Diesel car:</label>
+        <select id="diesel-car" name="diesel-car">
+            <option value="0">Select your range </option>
+            <option value="1700">Up to 10 km</option>
+            <option value="3200">10 km to 30 km</option>
+            <option value="5500">More than 30 km</option>
+        </select>
+        <br>
+        <label for="petrol-car">Petrol car:</label>
+        <select id="petrol-car" name="petrol-car">
+            <option value="0">Select your range </option>
+            <option value="1400">Up to 10 km</option>
+            <option value="2800">10 km to 30 km</option>
+            <option value="4000">More than 30 km</option>
+        </select>
+        <br>
+        <label for="petrol-bike">Petrol bike:</label>
+        <select id="petrol-bike" name="petrol-bike">
+            <option value="0">Select your range </option>
+            <option value="420">Up to 10 km</option>
+            <option value="1680">10 km to 30 km</option>
+            <option value="2100">More than 30 km</option>
+        </select>
+        <br>
+        <label for="ev-vehicle">EV Vehicle:</label>
+        <select id="ev-vehicle" name="ev-vehicle">
+            <option value="0">EV does not emit carbon </option>
+        </select>
+        <br>
+        <label for="cycle">Cycle:</label>
+        <select id="cycle" name="cycle">
+            <option value="0">Cycle does not emit carbon </option>
+        </select>
+        <br>
+        <label for="public-vehicle">Public vehicle:</label>
+        <select id="public-vehicle" name="public-vehicle">
+            <option value="0">Can't calculate public vehicle carbon emission in personal</option>
+        </select>
+        <br>
+        <label for="microwave">Microwave:</label>
+        <select id="microwave" name="microwave">
+            <option value="0.0">Choose the Duration</option>
+            <option value="5.55">less than 30 minute</option>
+            <option value="16.66">upto 1 hour</option>
+            <option value="33.3">upto 2 hour</option>
+        </select>
+        <br>
+        <label for="washing-machine">Washing Machine:</label>
+        <select id="washing-machine" name="washing-machine">
+            <option value="0.0">Choose the Duration</option>
+            <option value="4.58">less than 30 minute</option>
+            <option value="11.45">upto 1 hour</option>
+            <option value="23.70">upto 2 hour</option>
+        </select>
+        <br>
+        <label for="standard-light-bulb">Standard Light Bulb:</label>
+        <select id="standard-light-bulb" name="standard-light-bulb">
+            <option value="0.0">Choose the Quantity and Duration</option>
+            <option value="64.5">1 Bulb for less than 3 hours</option>
+            <option value="172">1 Bulb for 4 to 12 hours</option>
+            <option value="344">1 Bulb for more than 12 hours</option>
+            <option value="193.5">2 to 3 Bulb for less than 3 hours</option>
+            <option value="516">2 to 3 Bulb for 4 to 12 hours</option>
+            <option value="1032">2 to 3 Bulb for more than 12 hours</option>
+            <option value="322">More than 4 Bulb for less than 3 hours</option>
+            <option value="860">More than 4 Bulb for 4 to 12 hours</option>
+            <option value="1720">More than 4 Bulb for more than 12 hours</option>
+        </select>
+        <br>
+        <button type="button" id="calculate">Calculate Carbon Footprint</button>
+        <br>
+    </form>  
+
+    <br>
+    <br>
+    <div id="results">
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
